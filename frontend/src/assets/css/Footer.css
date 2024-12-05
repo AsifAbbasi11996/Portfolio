@@ -1,0 +1,19 @@
+.footer {
+    text-align: center;
+    background-color: #2d2e32;
+    color: white;
+    padding: 20px 0;
+    width: 100%;
+    line-height: 3;    
+
+    h3 i {
+        color: red;
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 14px;
+        font-weight: bold;
+
+    }
+}

@@ -1,0 +1,65 @@
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+
+    .text-timeline {
+        display: flex;
+        justify-content: center;
+        color: blue;
+        font-size: 1.1rem;
+    }
+
+    .box-2,
+    .box-3,
+    .box-4 {
+        padding: 15px 30px;
+        margin: 20px auto;
+        width: 25%;
+        border-radius: 20px;
+        border: 1px solid rgb(212, 210, 210);
+        box-shadow: 5px 5px 10px rgba(150, 150, 150, .5);
+
+        p {
+            text-align: center;
+        }
+
+        .year {
+            font-weight: 600;
+            color: #2d2e32;
+        }
+    }
+
+    .box-2:hover {
+        border: 1px solid white;
+        box-shadow: 5px 10px 20px rgb(46, 102, 121, .7);
+        background: rgb(244, 238, 238);
+    }
+
+    .box-3:hover {
+        border: 1px solid white;
+        box-shadow: 5px 10px 20px rgb(46, 102, 121, .7);
+        background: rgb(244, 238, 238);
+    }
+
+    .box-4:hover {
+        border: 1px solid white;
+        box-shadow: 5px 10px 20px rgb(46, 102, 121, .7);
+        background: rgb(244, 238, 238);
+    }
+}
+
+@media only screen and (min-width:120px) and (max-width:720px) {
+    .timeline{
+        padding: 20px 0;
+    
+        .box-2,
+        .box-3,
+        .box-4 {
+            width: 70%;
+            padding: 10px 30px;
+        }
+    }
+}

@@ -14,7 +14,7 @@ body {
     align-items: center;
     justify-content: space-around;
     padding: 20px 40px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.153);
 
     & .left {
         font-size: 1.7rem;
@@ -64,8 +64,8 @@ body {
     .nav {
         display: flex;
         align-items: center;
-        justify-content: space-around;
-        padding: 10px;
+        justify-content: space-between;
+        padding: 10px 30px;
 
         .left {
             text-align: center;

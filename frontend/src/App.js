@@ -8,7 +8,7 @@ import About from './components/About.js';
 import Timeline from './components/Timeline.js';
 import Contact from './components/Contact.js'
 import Projects  from './components/Projects.js'
-import Footer from './components/Footer.js'
+import AddProject from './components/AddProject.js';
 
 
 
@@ -25,7 +25,7 @@ function App() {
         <Route path='/timeline' element={<Timeline />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/projects' element={<Projects />} />
-        <Route path='/footer' element={<Footer />} />
+        <Route path='/add' element={<AddProject />} />
       </Routes>
     </>
   );

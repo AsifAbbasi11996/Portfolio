@@ -16,7 +16,6 @@ const Projects = () => {
       try {
         const fetchedProjects = await getProjects() // Fetch the projects from the API
         setProjects(fetchedProjects) // Store them in the state
-        console.log(fetchedProjects)
         setLoading(false) // Set loading to false once data is fetched
       } catch (error) {
         console.error('Error fetching projects:', error)

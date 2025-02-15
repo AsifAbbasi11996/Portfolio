@@ -51,7 +51,7 @@ const Home = () => {
         <div className='button-tech'>
           <div className='buttons'>
             <NavLink
-              to='https://drive.google.com/file/d/1EaL8zEz0hNJIkn3SDrwYlrqCzD-UEibL/view?usp=sharing'
+              to='https://drive.google.com/file/d/1Pj2vVmlMceYQTXd1-6nuwNozwfouokSx/view?usp=drive_link'
               target='_blank'
             >
               <button>Download Resume</button>

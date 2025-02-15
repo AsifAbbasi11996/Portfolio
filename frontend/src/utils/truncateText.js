@@ -1,6 +1,6 @@
 // utils/truncateText.js
 
-export const truncateText = (text, wordLimit = 30) => {
+export const truncateText = (text, wordLimit = 25) => {
   if (!text || typeof text !== 'string') return '' // Handle invalid text input
 
   // Split the text into an array of words

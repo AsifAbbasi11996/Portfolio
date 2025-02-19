@@ -27,9 +27,18 @@ const Projects = () => {
     fetchProjects()
   }, [])
 
-  // Show a loading state while data is being fetched
+  // Show the animated loader while data is being fetched
   if (loading) {
-    return <div>Loading projects...</div>
+    return (
+      <div className='loader-container'>
+        <motion.div
+          className='loader'
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+        />
+      </div>
+    )
   }
 
   return (

@@ -5,7 +5,6 @@ import { Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar.js'
 import Home from './components/Home.js'
 import About from './components/About.js';
-import Timeline from './components/Timeline.js';
 import Contact from './components/Contact.js'
 import Projects  from './components/Projects.js'
 import AddProject from './components/AddProject.js';
@@ -22,7 +21,6 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
-        <Route path='/timeline' element={<Timeline />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/projects' element={<Projects />} />
         <Route path='/add' element={<AddProject />} />

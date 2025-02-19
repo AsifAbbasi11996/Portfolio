@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
+import { motion } from 'framer-motion'
 import { getProjects } from '../api/projectApi.js' // Import the getProjects API
 import '../assets/css/Projects.css'
 import { formatDate } from '../utils/formatDate.js'
@@ -33,24 +34,43 @@ const Projects = () => {
 
   return (
     <div className='projects-container'>
-      <h3 className='text-projects'>PROJECTS</h3>
+      <motion.h3
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+        className='text-projects'
+      >
+        PROJECTS
+      </motion.h3>
 
       <div className='projects-grid'>
         {/* Dynamically render projects */}
         {projects.map(project => (
-          <div key={project._id} className='box'>
+          <motion.div
+            key={project._id}
+            className='box'
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 0.5 }}
+          >
             <div className='projects'>
-              <h3>
+              <motion.h3
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1, delay: 1 }}
+              >
                 {project.projectName} ({formatDate(project.startDate)} -{' '}
                 {project.endDate ? formatDate(project.endDate) : 'Present'})
-              </h3>
+              </motion.h3>
 
               <div className='projects-text'>
                 <div className='image'>
                   {/* Use the formatImageUrl function to handle the image URL */}
-                  <img
+                  <motion.img
                     src={formatImageUrl(project.projectImage)}
                     alt={project.projectName}
+                    whileHover={{ scale: 1.05 }}
+                    transition={{ duration: 0.3 }}
                   />
                 </div>
                 <div className='projects-description'>
@@ -58,7 +78,14 @@ const Projects = () => {
                   <div className='stack'>
                     {/* Render the tech stack dynamically */}
                     {project.tech.map((tech, index) => (
-                      <p key={index}>{tech}</p>
+                      <motion.p
+                        key={index}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 1, delay: 1.5 }}
+                      >
+                        {tech}
+                      </motion.p>
                     ))}
                   </div>
 
@@ -71,7 +98,7 @@ const Projects = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>

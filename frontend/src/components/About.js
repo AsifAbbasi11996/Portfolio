@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 import '../assets/css/About.css'
 import mern from '../assets/images/mern.png'
 import developer from '../assets/images/developer.webp'
@@ -9,12 +10,36 @@ const About = () => {
       <div className='about-container'>
         <div className='about'>
           <div className='About-text'>
-            <h3 className='text-about'>ABOUT ME</h3>
-            <h3>A Passionate MERN Stack Developer 📍</h3>
+            <motion.h3
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1 }}
+              className='text-about'
+            >
+              ABOUT ME
+            </motion.h3>
+            <motion.h3
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1, delay: 0.5 }}
+            >
+              A Passionate MERN Stack Developer 📍
+            </motion.h3>
 
-            <h3>Work Experience</h3>
+            <motion.h3
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1, delay: 1 }}
+            >
+              Work Experience
+            </motion.h3>
 
-            <div className='about-job'>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1, delay: 1 }}
+              className='about-job'
+            >
               <p>
                 <strong>Web Developer</strong> | RDIGI WORKS <br /> June 2024 to
                 November 2024, Bhayandar, Maharashtra
@@ -33,15 +58,36 @@ const About = () => {
                   ensuring optimal performance and reliability.
                 </li>
               </ul>
-            </div>
-            <div className='image'>
-              <img src={mern} />
-            </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1, delay: 1 }}
+              className='image'
+            >
+              <motion.img
+                src={mern}
+                alt='MERN Stack'
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.3 }}
+              />
+            </motion.div>
           </div>
 
-          <div className='img'>
-            <img src={developer} />
-          </div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 1 }}
+            className='img'
+          >
+            <motion.img
+              src={developer}
+              alt='Developer'
+              whileHover={{ scale: 1.1 }}
+              transition={{ duration: 0.3 }}
+            />
+          </motion.div>
         </div>
       </div>
     </>

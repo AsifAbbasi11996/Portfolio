@@ -15,9 +15,7 @@ body {
   align-items: center;
   justify-content: space-around;
   padding: 20px 40px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.153);
   position: relative;
-  background-color: #fff;
 
   & .left {
     font-size: 1.7rem;
@@ -26,7 +24,7 @@ body {
 
     & a {
       text-decoration: none;
-      color: black;
+      color: #00b3b3;
       cursor: pointer;
     }
 
@@ -44,9 +42,10 @@ body {
 
       & a {
         text-decoration: none;
-        color: black;
+        color: #00b3b3;
         cursor: pointer;
         font-weight: bold;
+        letter-spacing: 1.5px;
       }
 
       & a:hover {

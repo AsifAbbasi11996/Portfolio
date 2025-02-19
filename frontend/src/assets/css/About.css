@@ -1,9 +1,13 @@
 .about-container {
   padding: 20px 40px;
+  position: relative;
+  color: #fff;
+  border-radius: 15px;
 
   .about {
     padding: 2rem 4rem;
     display: flex;
+    animation: fadeIn 2s ease-out;
 
     .About-text {
       color: #555;
@@ -12,35 +16,64 @@
 
       .text-about {
         font-size: 1.1rem;
-        color: blue;
+        color: #00b3b3;
+        letter-spacing: 3px;
+        text-shadow: none;
       }
 
       h3 {
-        color: #2d2e32;
-        font-family: Poppins, sans-serif;
+        color: #fff;
+        font-family: 'Poppins', sans-serif;
         font-size: 1.5rem;
         line-height: 1;
         margin-bottom: 1rem;
+        text-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
       }
 
       p {
         margin: 20px 0 10px 0;
+        color: #fff;
       }
 
       ul {
         padding-left: 30px;
+        list-style-type: disc;
 
         li {
-          margin-bottom: 3px;
+          margin-bottom: 10px;
+          color: #ddd;
         }
       }
 
       .image {
+        margin-top: 30px;
+
         img {
           width: 300px;
+
+          transition: transform 0.3s ease-in-out;
         }
       }
     }
+
+    .img {
+      max-width: 500px;
+
+      img {
+        width: 100%;
+        border-radius: 15px;
+        transition: transform 0.3s ease-in-out;
+      }
+    }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -65,8 +98,7 @@
       }
 
       .About-text {
-
-        .text-about{
+        .text-about {
           text-align: center;
           font-size: 0.8rem;
         }
@@ -80,13 +112,12 @@
           font-size: 0.9rem;
         }
 
-        ul li{
+        ul li {
           font-size: 0.8rem;
         }
 
-        .image{
-
-          img{
+        .image {
+          img {
             width: 200px;
           }
         }

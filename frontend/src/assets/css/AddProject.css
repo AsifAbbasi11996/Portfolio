@@ -1,0 +1,120 @@
+.add-project-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+
+  h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #00b3b3;
+  }
+
+  .error {
+    color: red;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  /* Form Styles */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .form-group{
+        flex: 1;
+    }
+
+    .two{
+        display: flex;
+    }
+
+    .description{
+        display: flex;
+        flex-direction: column;
+    }
+  }
+
+  label {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+    margin-right: 1rem;
+  }
+
+  input,
+  textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #00b3b3;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+
+  input[type='file'] {
+    padding: 5px;
+  }
+
+  input:focus,
+  textarea:focus {
+    border-color: #00b3b3;
+    box-shadow: 0 0 5px #00b3b3;
+  }
+
+  textarea {
+    resize: vertical;
+    height: 120px;
+  }
+
+  input[type='date'] {
+    padding-left: 5px;
+  }
+
+  button {
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: 550;
+    background-color: #00b3b3;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  button:disabled {
+    background-color: #ccc;
+  }
+
+  button:hover:not(:disabled) {
+    background-color: #007c7c;
+  }
+
+  button:active {
+    background-color: #007c7c;
+  }
+}
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  .add-project-container {
+    padding: 15px;
+
+    h3 {
+      font-size: 1.5rem;
+    }
+
+    button {
+      font-size: 0.9rem;
+    }
+
+    input,
+    textarea {
+      font-size: 0.9rem;
+    }
+  }
+}

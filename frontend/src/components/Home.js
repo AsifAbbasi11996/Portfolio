@@ -161,7 +161,7 @@ const Home = () => {
 
         <div className='social_icons'>
           <div className='icon li'>
-            <NavLink to='https://www.linkedin.com/in/asif-abbasi-42962a245'>
+            <NavLink to='https://www.linkedin.com/in/asif-abbasi-42962a245' target='_blank'>
               <motion.i
                 className='fa-brands fa-linkedin'
                 whileHover={{ scale: 1.2, color: '#0A66C2' }}
@@ -170,7 +170,7 @@ const Home = () => {
             </NavLink>
           </div>
           <div className='icon wp'>
-            <NavLink to='https://wa.me/918788238470'>
+            <NavLink to='https://wa.me/918788238470' target='_blank'>
               <motion.i
                 className='fa-brands fa-whatsapp'
                 whileHover={{ scale: 1.2, color: '#25D366' }}
@@ -179,19 +179,19 @@ const Home = () => {
             </NavLink>
           </div>
           <div className='icon git'>
-            <NavLink to='https://github.com/AsifAbbasi11996/'>
+            <NavLink to='https://github.com/AsifAbbasi11996/' target='_blank'>
               <motion.i
                 className='fa-brands fa-github'
-                whileHover={{ scale: 1.2, color: '#333' }}
+                whileHover={{ scale: 1.2, color: '#fff' }}
                 transition={{ duration: 0.3 }}
               ></motion.i>
             </NavLink>
           </div>
           <div className='icon mail'>
-            <NavLink to='mailto:asifabbasi7666@gmail.com'>
+            <NavLink to='mailto:asifabbasi7666@gmail.com' target='_blank'>
               <motion.i
                 className='fa-solid fa-square-envelope'
-                whileHover={{ scale: 1.2, color: '#D44638' }}
+                whileHover={{ scale: 1.2, color: '#4285f4' }}
                 transition={{ duration: 0.3 }}
               ></motion.i>
             </NavLink>

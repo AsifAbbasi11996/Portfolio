@@ -18,7 +18,7 @@ export const addProject = async (projectData, imageData) => {
       formData.append('projectImage', imageData)
     }
 
-    const response = await axios.post(API_URL, formData, {
+    const response = await axios.post(`${API_URL}project/add`, formData, {
       headers: {
         'Content-Type': 'multipart/form-data'
       }

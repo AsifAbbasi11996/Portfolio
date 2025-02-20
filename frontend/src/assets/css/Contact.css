@@ -12,6 +12,7 @@
     text-align: center;
     margin-bottom: 30px;
     letter-spacing: 3px;
+    text-shadow: none;
   }
 
   h3 {
@@ -20,6 +21,7 @@
     margin-bottom: 20px;
     font-size: 1.6rem;
     color: #fff;
+    text-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
   }
 
   .message {
@@ -141,6 +143,10 @@
     box-sizing: border-box;
   }
 
+  input:focus, textarea:focus{
+    outline: none;
+  }
+
   .form-group textarea {
     resize: vertical;
     min-height: 150px;
@@ -155,7 +161,7 @@
     padding: 10px 15px;
     font-size: 1rem;
     background-color: #00b3b3;
-    color: #fff;
+    color: #000;
     border: none;
     border-radius: 6px;
     cursor: pointer;
@@ -167,7 +173,8 @@
   }
 
   button:hover {
-    background-color: rgb(3, 3, 195);
+    background-color: #007c7c;
+    color: #fff;
   }
 
   button:disabled {
